@@ -5,13 +5,15 @@ const cliente = {
     telefone: ["1115555550","1144444440"]
 };
 
+cliente.endereço = [
+    {
+        rua: "Rua Jose",
+        numero: "45",
+        apartamento: true,
+        complemento: "34"
+    },
+];
 
-
-cliente.endereço = {
-    rua: "Rua Jose",
-    numero: "45",
-    apartamento: true,
-    complemento: "34"
+for(let chave in cliente) {
+    console.log(cliente[chave])
 }
-
-console.log(cliente.endereço)
